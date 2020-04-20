@@ -1,0 +1,33 @@
+$font-main: 'Inria Serif',
+serif;
+$font-sub: 'Roboto',
+sans-serif;
+
+%card {
+    border: none;
+    padding: 10px;
+    color: #333;
+    border-radius: 5px;
+    background-color: grey;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font: 100% $font-sub;
+    margin: 1px;
+    @extend %card;
+
+    h3 {
+        width: 100%;
+        margin: 3px;
+        margin-bottom: 8px;
+    }
+
+    span {
+        display: block;
+        font: 85% $font-main;
+    }
+}

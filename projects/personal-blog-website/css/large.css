@@ -1,0 +1,52 @@
+@media screen and (min-width: 900px) {
+
+    /* Classes */
+    .container {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-areas:
+            "hd hd"
+            "nav main"
+            "x main"
+            "ft ft";
+    }
+
+    main .box {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-areas:
+            "title card"
+            "post post";
+    }
+
+    .box p {
+        grid-area: post;
+    }
+
+    .box h2 {
+        grid-area: title;
+    }
+
+    .card {
+        grid-area: card;
+        box-shadow: 2px 3px 10px;
+    }
+
+    /* HTML Elements */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10%;
+        padding: 10px 40px 10px 40px;
+        width: 60px;
+    }
+
+    button {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+}

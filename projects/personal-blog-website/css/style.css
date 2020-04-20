@@ -1,0 +1,147 @@
+@import "large.css";
+@import "medium.css";
+@import "small.css";
+
+/* Classes */
+
+.box {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background: whitesmoke;
+}
+
+.card {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: burlywood;
+    margin: 3px;
+    justify-content: flex-start;
+    max-height: 50px;
+    max-width: 220px;;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.author span {
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.author .title {
+    font-size: 1.2em;
+}
+
+/* Headers */
+
+h1 {
+    text-align: center;
+}
+
+/* HTML elements */
+
+header {
+    grid-area: hd;
+}
+
+nav {
+    grid-area: nav;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    border: solid black 1px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 3px 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+main {
+    grid-area: main;
+}
+
+main p {
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+main h2 {
+    margin-left: 1%;
+}
+
+footer {
+    grid-area: ft;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5% 0px 5% !important;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+button {
+    background: burlywood;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    background: whitesmoke;
+}
+
+button a:hover {
+    text-decoration: none;
+}
+
+figcaption {
+    font-size: 0.7em;
+    align-self: center;
+    position: absolute;
+    margin-top: 38px;
+    background: rgba(255, 255, 255, 0.7)
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}

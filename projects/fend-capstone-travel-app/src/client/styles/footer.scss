@@ -1,0 +1,10 @@
+$font-main: 'Inria Serif', serif;
+$font-sub: 'Roboto', sans-serif;
+
+body{
+    footer {
+        margin: 1%;
+        font: 100% $font-main;
+        font-style: italic;
+    }
+}
