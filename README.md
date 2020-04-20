@@ -1,13 +1,18 @@
-# Front End Nanodegree Program
+# Udacity's Front End Nanodegree Program
 
 Bas Brakel's Front End Nanodegree Courses & Projects Repository
 
 ## Table of Contents
 
+* [Nanodegree](#nanodegree)
 * [Projects](#projects)
 * [Courses](#courses)
 * [Style-Guide](#style-guide)
 * [Disclaimer](#disclaimer)
+
+## Nanodegree
+
+
 
 ## Projects
 
@@ -17,7 +22,7 @@ The following is a list of current projects required to complete the Front End N
 2. [Landing Page- Completed](https://github.com/bbrakel/Udacity/tree/master/projects/landing-page)
 3. [Weather Journal App- Completed](https://github.com/bbrakel/Udacity/tree/master/projects/weather-journal-app)
 4. [Evaluate A News Article with Natural Language Processing- Completed](https://github.com/bbrakel/Udacity/tree/master/projects/evaluate-news-nlp)
-5. [Capstone - Travel App - In Progress](https://github.com/bbrakel/Udacity/tree/master/projects/fend-capstone-travel-app)
+5. [Capstone - Travel App - Completed](https://github.com/bbrakel/Udacity/tree/master/projects/fend-capstone-travel-app)
 
 ## Courses
 
