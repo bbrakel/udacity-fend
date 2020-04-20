@@ -1,11 +1,11 @@
 # Front End Nanodegree Program
 
-Bas Brakel's Front End Nanodegree Lessons & Projects Repository
+Bas Brakel's Front End Nanodegree Courses & Projects Repository
 
 ## Table of Contents
 
 * [Projects](#projects)
-* [Lessons](#lessons)
+* [Courses](#courses)
 * [Style-Guide](#style-guide)
 * [Disclaimer](#disclaimer)
 
