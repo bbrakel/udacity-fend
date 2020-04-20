@@ -12,7 +12,7 @@ Bas Brakel's Front End Nanodegree Courses & Projects Repository
 
 ## Nanodegree
 
-
+    COMPLETED, 1 February 2020
 
 ## Projects
 
