@@ -1,52 +1,73 @@
 // Setup empty JS object to act as endpoint for all routes
-let apiData = {};
+let apiData = [];
 
 // Require Express to run server and routes
 const express = require('express');
-const https = require('https');
-const http = require('http');
-
-/* Dependencies */
-const bodyParser = require('body-parser');
-const dotenv = require('dotenv').config();
-var apiAuth = process.env.API_KEY
 
 // Start up an instance of app
 const app = express();
 
+var path = require('path');
+const https = require('https');
+const http = require('http');
+
+/* Dependencies */
+const dotenv = require('dotenv').config();
+
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const fetch = require('node-fetch');
+
+// Setup Server
+const port = process.env.PORT
+
+
 /* Middleware*/
 //Here we are configuring express to use body-parser as middle-ware.
 app.use(bodyParser.urlencoded({
-    extended: false
+  extended: false
 }));
 app.use(bodyParser.json());
 
 // Cors for cross origin allowance
-const cors = require('cors');
 app.use(cors());
 
 // Initialize the main project folder
-app.use(express.static('../dist'));
+app.use(express.static('dist'))
 
+console.log(__dirname)
 
-// Setup Server
-const port = 8080;
-
-const server = app.listen(port, () => {
-    console.log(`running on localhost: ${port}`)
+app.get('/', function (req, res) {
+  res.sendFile('dist/index.html')
 })
 
-// POST method route
-app.post('/', function (req, res) {
-    res.send({
-        "message": "POST request to the homepage"
-    })
+app.listen(port, () => {
+  console.log(`running on localhost: ${port}`)
+});
+
+const options = {
+  method: 'get',
+  mode: 'cors',
+  cache: 'no-cache',
+  credentials: 'same-origin',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  redirect: 'follow',
+  referrerPolicy: 'no-referrer',
+}
+
+app.post('/geoAPI', async (req, res) => {
+  const response = await fetch(`${process.env.GEO_URL}placename=${req.body.input}&username=${process.env.GEO_USERNAME}`, options)
+  res.send(await response.json())
 })
 
-app.post('/apidata', function (req, res) {
-    let apiData = req.body.postalCodes[0];
-    res.send({
-        "message": "SERVER(localhost:8080), DATA STORED",
-        "data": apiData
-    });
+app.post('/pixAPI', async (req, res) => {
+  const response = await fetch(`${process.env.PIX_URL}key=${process.env.PIX_KEY}&q=${req.body.input}`)
+  res.send(await response.json())
+})
+
+app.post('/dsAPI', async (req, res) => {
+  const response = await fetch(`${process.env.DS_URL}${process.env.DS_KEY}/${req.body.lat.toFixed(4)},${req.body.long.toFixed(4)},${req.body.time}`)
+  res.send(await response.json())
 })

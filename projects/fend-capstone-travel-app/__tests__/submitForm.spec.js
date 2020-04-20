@@ -1,9 +1,9 @@
 import {
-    handleSubmit
+    handleData
 } from "../src/client/js/submitForm"
 
-describe("Testing handleSubmit()", () => {
-    test("TEST: handleSubmit()", () => {
-        handleSubmit();
+describe("Testing handleData()", () => {
+    test("TEST: handleData()", () => {
+        handleData();
     })
 })

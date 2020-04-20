@@ -3,21 +3,13 @@ import {
 } from "./js/postData";
 
 import {
-    handleSubmit,
-    listen
+    listen,
+    handleData
 } from "./js/submitForm"
 
 import {
-    fetchGeonames
-} from "./js/getGeonames"
-
-import {
-    fetchDarkSky
-} from "./js/getDarkSky"
-
-import {
-    fetchPixabay
-} from "./js/getPixabay"
+    newBody
+} from "./js/replaceBody"
 
 import './styles/aside.scss'
 import './styles/body.scss'
@@ -27,9 +19,7 @@ import './styles/main.scss'
 
 export {
     handlePOST,
-    handleSubmit,
-    fetchGeonames,
-    fetchDarkSky,
-    fetchPixabay,
-    listen
+    listen,
+    newBody,
+    handleData
 }

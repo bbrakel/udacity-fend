@@ -11,22 +11,33 @@ npm install
 ```
 
 ## Usage
-Start host server:
+Config and start host server:
 ```bash
 npm start
 ```
 
-Start proxy server:
+View website in live preview (WINDOWS):
 ```bash
-npm run proxy
+npm run dev
 ```
 
-To build the dist folder:
+View website in live preview (OTHER):
 ```bash
 npm run build
 ```
 
-View website in live preview:
 ```bash
-npm run dev
+npm run server
 ```
+
+```bash
+npm run view
+```
+
+## Known Issues
+- [x] "npm start" doesn't work if used before "npm build"
+- [x] service workers not working
+- [x] critical Jests errors
+
+## To-Do
+- [x] fix all known issues

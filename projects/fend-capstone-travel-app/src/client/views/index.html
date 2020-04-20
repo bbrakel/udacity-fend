@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Weather Journal</title>
+  <title>FEND Travel Planner</title>
+  <link rel="shortcut icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Inria+Serif|Roboto&display=swap" rel="stylesheet">
 </head>
 
@@ -16,7 +17,7 @@
       <label for="start">From</label>
       <input type="text" id="from">
       <label for="destination">To</label>
-      <input type="text" id="input">
+      <input type="text" id="to">
       <label for="tripdate">Date</label>
       <div id="dateCont">
         <input class="shdate" type="text" id="day">
@@ -36,6 +37,15 @@
       <span>https://darksky.net/poweredby/</span>
     </footer>
   </div>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
 </body>
 
 </html>
