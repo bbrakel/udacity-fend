@@ -4,16 +4,17 @@ Bas Brakel's Front End Nanodegree Courses & Projects Repository
 
 ## Table of Contents
 
-* [Nanodegree](#nanodegree)
-* [Projects](#projects)
-* [Courses](#courses)
-* [Style-Guide](#style-guide)
-* [Disclaimer](#disclaimer)
+- [Nanodegree](#nanodegree)
+- [Projects](#projects)
+- [Courses](#courses)
+- [Style-Guide](#style-guide)
+- [Disclaimer](#disclaimer)
 
 ## Nanodegree
 
     COMPLETED, 1 February 2020
-    [Confirmation of Completion](https://graduation.udacity.com/confirm/S92KMP7C)
+
+[Confirmation of Completion](https://graduation.udacity.com/confirm/S92KMP7C)
 
 ## Projects
 
@@ -29,16 +30,16 @@ The following is a list of current projects required to complete the Front End N
 
 The following is a list of the courses associated with the Front End Nanodegree.
 
-* C1 - CSS, Website Layout, Website Components - Completed (no files)
-* C2 - JavaScript & The DOM - Completed (no files)
-* C3 - Web API's and Asynchronous Applications - Completed (no files)
-* [C4 - Build Tools and Single Page Web Apps - Completed](https://github.com/bbrakel/Udacity/tree/master/courses/c4)
+- C1 - CSS, Website Layout, Website Components - Completed (no files)
+- C2 - JavaScript & The DOM - Completed (no files)
+- C3 - Web API's and Asynchronous Applications - Completed (no files)
+- [C4 - Build Tools and Single Page Web Apps - Completed](https://github.com/bbrakel/Udacity/tree/master/courses/c4)
 
 ## Style-Guide
 
 See below for the Udacity Style Guide used thoroughout the Front End Nanodegree.
 
-* [Nanodegree Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/)
+- [Nanodegree Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/)
 
 ## Disclaimer
 
